@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'Robofan';
-    src: url('../public/assets/fonts/Robofan.otf') format('opentype');
+    src: url('./public/assets/fonts/Robofan.otf') format('opentype');
 }
 
 @font-face {
     font-family: 'GeometosSoftUltra';
-    src: url('../public/assets/fonts/GeometosSoftUltra.otf') format('opentype');
+    src: url('./public/assets/fonts/GeometosSoftUltra.otf') format('opentype');
 }
 
 body {
