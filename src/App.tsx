@@ -63,7 +63,7 @@ const Navbar = ({ children, className }: ComponentProps) => (
 
 const NavbarBrand = ({ children }: ComponentProps) => (
   <div className="navbar-brand">
-    <img src="./src/assets/OwlFast-Community.jpg" alt="Logo" className="navbar-logo" />
+    <img src="./src/assets/img/OwlFast-Community.jpg" alt="Logo" className="navbar-logo" />
     {children}
   </div>
 );
@@ -170,7 +170,7 @@ const App = () => {
       ),
     },
     {
-      image: "./src/assets/ETS2.png",
+      image: "./src/assets/img/ETS2.png",
       message: (
         <p>
           Vous devez <span className="text-red-500 font-bold">IMPERATIVEMENT</span> modifier la ligne :<br />
@@ -185,7 +185,7 @@ const App = () => {
       ),
     },
     {
-      image: "./src/assets/ETS2.png",
+      image: "./src/assets/img/ETS2.png",
       message: (
         <p>
           Vous devez aussi modifier la ligne <br />
@@ -198,7 +198,7 @@ const App = () => {
       ),
     },
     {
-      image: "./src/assets/ETS2.png",
+      image: "./src/assets/img/ETS2.png",
       message: (
         <p>
           Vous devez aussi modifier la ligne <br />
@@ -277,7 +277,7 @@ const App = () => {
       <motion.div
         className="hero"
         style={{
-          backgroundImage: "url('./src/assets/owlfast.webp')",
+          backgroundImage: "url('./src/assets/img/owlfast.webp')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           filter: "brightness(80%)",
@@ -319,7 +319,7 @@ const App = () => {
             },
           ].map((member, index) => (
             <div key={index} className="card text-center">
-              <img src="./src/assets/OwlFast-Profil.jpg" alt="Member" style={{ width: "200px", borderRadius: "8px", margin: "0 auto" }} />
+              <img src="./src/assets/img/OwlFast-Profil.jpg" alt="Member" style={{ width: "200px", borderRadius: "8px", margin: "0 auto" }} />
               <h3 className="card-header">{member.name}</h3>
               <p>Passionne de simulation sans prise de tête ! <br></br>
                 🚀 Viens tester des jeux, piloter, ou juste passer un bon moment. Ici, on rigole, on explore, et on chill.
