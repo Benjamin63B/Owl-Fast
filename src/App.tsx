@@ -63,7 +63,7 @@ const Navbar = ({ children, className }: ComponentProps) => (
 
 const NavbarBrand = ({ children }: ComponentProps) => (
   <div className="navbar-brand">
-    <img src="./src/assets/img/OwlFast-Community.jpg" alt="Logo" className="navbar-logo" />
+    <img src="assets/img/OwlFast-Community.jpg" alt="Logo" className="navbar-logo" />
     {children}
   </div>
 );
@@ -102,7 +102,7 @@ const Modal = ({ onClose }: { onClose: () => void }) => (
           </button>
         </p>
         <Button className="mt-4 mb-4">
-          <a href="./src/download/steam_links.txt" download className="social-link">
+          <a href="asset/download/steam_links.txt" download className="social-link">
             <FaDownload className="mr-2" /> Télécharger la liste des liens Steam
           </a>
         </Button>
@@ -120,21 +120,21 @@ const App = () => {
   const [isLive, setIsLive] = useState(false);
 
   const slides: Slide[] = [
-    { image: "./src/assets/installation/1.webp", message: "" },
-    { image: "./src/assets/installation/2.webp", message: "" },
-    { image: "./src/assets/installation/3.webp", message: "" },
+    { image: "assets/installation/1.webp", message: "" },
+    { image: "assets/installation/2.webp", message: "" },
+    { image: "assets/installation/3.webp", message: "" },
     {
-      image: "./src/assets/installation/4.webp",
+      image: "assets/installation/4.webp",
       message: (
         <p className="font-bold">
           ATTENTION : Le mod compatibility <span className="text-red-500">Patch with Eugene</span> a été supprimer, il ne fonctionne plus.
         </p>
       ),
     },
-    { image: "./src/assets/installation/5.webp", message: "" },
-    { image: "./src/assets/installation/6.webp", message: "" },
-    { image: "./src/assets/installation/7.webp", message: "" },
-    { image: "./src/assets/installation/8.webp", message: "" },
+    { image: "assets/installation/5.webp", message: "" },
+    { image: "assets/installation/6.webp", message: "" },
+    { image: "assets/installation/7.webp", message: "" },
+    { image: "assets/installation/8.webp", message: "" },
     {
       image: "./src/assets/installation/9.webp",
       message: (
@@ -143,9 +143,9 @@ const App = () => {
         </p>
       ),
     },
-    { image: "./src/assets/installation/10.webp", message: "" },
+    { image: "assets/installation/10.webp", message: "" },
     {
-      image: "./src/assets/installation/11.webp",
+      image: "assets/installation/11.webp",
       message: (
         <p>
           Une fois terminer, vous devez avoir <span className="text-green-500 font-bold">94 mods</span> actifs sur votre session.
@@ -153,7 +153,7 @@ const App = () => {
       ),
     },
     {
-      image: "./src/assets/owlfast_2.webp",
+      image: "assets/img/owlfast_2.webp",
       message: (
         <p>
           <span className="text-red-500 font-bold">ATTENTION :</span> Vous ne pourrez pas acheter de camion au début. Il
@@ -162,7 +162,7 @@ const App = () => {
       ),
     },
     {
-      image: "./src/assets/installation/12.webp",
+      image: "assets/installation/12.webp",
       message: (
         <p>
           Une fois quelques millions sur votre compte, vous devrez retirer ce mod pour nous rejoindre.
@@ -170,7 +170,7 @@ const App = () => {
       ),
     },
     {
-      image: "./src/assets/img/ETS2.png",
+      image: "assets/img/ETS2.png",
       message: (
         <p>
           Vous devez <span className="text-red-500 font-bold">IMPERATIVEMENT</span> modifier la ligne :<br />
@@ -185,7 +185,7 @@ const App = () => {
       ),
     },
     {
-      image: "./src/assets/img/ETS2.png",
+      image: "assets/img/ETS2.png",
       message: (
         <p>
           Vous devez aussi modifier la ligne <br />
@@ -198,7 +198,7 @@ const App = () => {
       ),
     },
     {
-      image: "./src/assets/img/ETS2.png",
+      image: "assets/img/ETS2.png",
       message: (
         <p>
           Vous devez aussi modifier la ligne <br />
@@ -277,7 +277,7 @@ const App = () => {
       <motion.div
         className="hero"
         style={{
-          backgroundImage: "url('./src/assets/img/owlfast.webp')",
+          backgroundImage: "url('assets/img/owlfast.webp')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           filter: "brightness(80%)",
@@ -319,7 +319,7 @@ const App = () => {
             },
           ].map((member, index) => (
             <div key={index} className="card text-center">
-              <img src="./src/assets/img/OwlFast-Profil.jpg" alt="Member" style={{ width: "200px", borderRadius: "8px", margin: "0 auto" }} />
+              <img src="assets/img/OwlFast-Profil.jpg" alt="Member" style={{ width: "200px", borderRadius: "8px", margin: "0 auto" }} />
               <h3 className="card-header">{member.name}</h3>
               <p>Passionne de simulation sans prise de tête ! <br></br>
                 🚀 Viens tester des jeux, piloter, ou juste passer un bon moment. Ici, on rigole, on explore, et on chill.
